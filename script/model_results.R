@@ -4,7 +4,7 @@ library(purrr)
 library(pROC)
 library(tidyverse)
 library(glmnet)
-source("model_utils.R")
+source("./R/model_utils.R")
 
 #================================
 #         Data Prep
@@ -715,4 +715,5 @@ ggplot(s2_si_rf, aes(x = Day, y = ROC, color = model, fill = model, linetype = m
     panel.grid.minor = element_blank(),
     panel.grid = element_blank()
   )
+
 
